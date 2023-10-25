@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next'
+import { GetStaticPaths, GetStaticProps } from 'next'
 import { GetCharacters } from '@/domain/usecases/GetCharacters'
 import { Character } from '@/domain/entities/Character'
 import { CharacterRepositoryAPI } from '@/infrastructure/repositories/CharacterRepositoryAPI'
