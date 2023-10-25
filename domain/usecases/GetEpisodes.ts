@@ -1,5 +1,5 @@
-import { Episode } from "../entities/Episode";
-import { EpisodeRepository } from "../repositories/EpisodeRepository";
+import { Episode } from "@/domain/entities/Episode";
+import { EpisodeRepository } from "@/domain/repositories/EpisodeRepository";
 
 export class GetEpisodes {
   constructor(private readonly episodeRepository: EpisodeRepository) {}

@@ -1,4 +1,4 @@
-import { Episode } from "../entities/Episode";
+import { Episode } from "@/domain/entities/Episode";
 
 export interface EpisodeRepository {
   getEpisodeById(id: number): Promise<Episode>;

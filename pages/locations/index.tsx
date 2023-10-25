@@ -10,7 +10,7 @@ type LocationsProps = {
 export default function Locations({ locations }: LocationsProps) {
   return (
     <>
-      <h1 className="text-3xl font-bold mb-4">Locations</h1>
+      <h1 className="text-3xl font-bold mb-4">Ubicaciones</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {locations.map((location: Location) => (
           <LocationCard key={location.id} location={location} />

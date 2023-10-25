@@ -9,7 +9,7 @@ type EpisodesProps = {
 export default function Episodes({ episodes }: EpisodesProps) {
   return (
     <>
-      <h1 className="text-3xl font-bold mb-4">Episodes</h1>
+      <h1 className="text-3xl font-bold mb-4">Episodios</h1>
       <ul>
         {episodes.map((episode) => (
           <li key={episode.id} className="mb-4">

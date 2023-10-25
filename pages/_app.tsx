@@ -1,13 +1,23 @@
 import type { AppProps } from 'next/app'
+import localFont from 'next/font/local'
 import Layout from '@/components/Layout'
 import '@/styles/globals.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const myFont = localFont({
+  src: './get_schwifty.woff2',
+})
+
+export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout> 
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <style jsx global>{`
+        h1 {
+          font-family: ${myFont.style.fontFamily};
+        }
+      `}</style>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   )
 }
-
-export default MyApp

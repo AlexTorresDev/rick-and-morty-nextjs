@@ -1,4 +1,4 @@
-import { Location } from "../entities/Location";
+import { Location } from "@/domain/entities/Location";
 
 export interface LocationRepository {
   getLocationById(id: number): Promise<Location>;

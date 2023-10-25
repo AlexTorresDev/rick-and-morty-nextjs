@@ -1,5 +1,5 @@
-import { Location } from "../entities/Location";
-import { LocationRepository } from "../repositories/LocationRepository";
+import { Location } from "@/domain/entities/Location";
+import { LocationRepository } from "@/domain/repositories/LocationRepository";
 
 export class GetLocations {
   constructor(private readonly locationRepository: LocationRepository) {}

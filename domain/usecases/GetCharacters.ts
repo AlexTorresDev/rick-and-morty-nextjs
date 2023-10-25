@@ -1,5 +1,5 @@
-import { Character } from "../entities/Character";
-import { CharacterRepository } from "../repositories/CharacterRepository";
+import { Character } from "@/domain/entities/Character";
+import { CharacterRepository } from "@/domain/repositories/CharacterRepository";
 
 export class GetCharacters {
   constructor(private readonly characterRepository: CharacterRepository) {}

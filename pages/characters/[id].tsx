@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 import { Character } from '@/domain/entities/Character';
-import { CharacterCard } from '@/components/CharacterCard';
+import CharacterCard from '@/components/CharacterCard';
 import { CharacterRepositoryAPI } from '@/infrastructure/repositories/CharacterRepositoryAPI';
 import { GetCharacters } from '@/domain/usecases/GetCharacters';
 import { GetCharacterById } from '@/domain/usecases/GetCharacterById';

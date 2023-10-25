@@ -1,11 +1,11 @@
+const API_URL = 'https://rickandmortyapi.com/api'
+
 export const fetcher = async (url: string) => {
-  const response = await fetch(url);
+  const response = await fetch(`${API_URL}${url}`)
 
   if (!response.ok) {
-    throw new Error(`Failed to fetch data from ${url}`);
+    throw new Error(`Failed to fetch data from ${API_URL}${url}`)
   }
 
-  const data = await response.json();
-
-  return data;
-};
+  return await response.json()
+}
